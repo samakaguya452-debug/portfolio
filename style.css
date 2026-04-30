@@ -1,14 +1,147 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top, #111 0%, #050505 100%);
+  color: #eaeaea;
+  line-height: 1.6;
+}
+
+/* NAVIGATION */
+nav {
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.15);
+}
+
+nav a {
+  color: #d6d6d6;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, gold, #ffd700);
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+}
+
 .hero h1 {
   font-size: 44px;
   margin-bottom: 12px;
   font-weight: 600;
   letter-spacing: 1px;
-
   background: linear-gradient(90deg, #ffffff, #ffd700);
-
   -webkit-background-clip: text;
-  background-clip: text;
-
   -webkit-text-fill-color: transparent;
-  color: transparent;
+}
+
+.hero p {
+  color: #aaa;
+  font-size: 16px;
+}
+
+/* SECTIONS */
+section {
+  background: rgba(20, 20, 20, 0.8);
+  margin: 25px auto;
+  padding: 30px;
+  border-radius: 14px;
+  max-width: 850px;
+  width: 90%;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255, 215, 0, 0.08);
+}
+
+/* TITLES */
+h2 {
+  margin-bottom: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #f5f5f5;
+}
+
+/* CARDS */
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 18px;
+  margin-top: 15px;
+  border-radius: 12px;
+  border-left: 3px solid #ffd700;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: linear-gradient(120deg, transparent, rgba(255,215,0,0.15), transparent);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+}
+
+/* TEXT */
+p {
+  color: #cfcfcf;
+  margin-top: 6px;
+}
+
+/* CONTACT */
+#contact a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+  color: #fff;
 }
