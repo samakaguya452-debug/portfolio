@@ -2,97 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jerald Roman | Portfolio</title>
+  <title>Jerald Garciano | Portfolio</title>
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- NAV -->
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">JG</div>
   <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
   </nav>
+</header>
 
-  <!-- HERO / PROFILE -->
-  <header class="hero">
+<!-- MAIN -->
+<div class="container">
+  <div class="profile-card">
 
-    <div class="profile-container">
-      <img src="profile.jpg" alt="Jerald Roman" class="profile-pic">
+    <!-- LEFT -->
+    <div class="left">
+      <img src="profile.jpg" class="profile-pic">
 
-      <div class="hero-text">
-        <h1>Jerald Roman</h1>
-        <h2 class="subtitle">Aspiring Web Developer</h2>
-        <p>
-          Structured, detail-oriented, and focused on building clean digital compositions.
-        </p>
+      <h1 class="name">Jerald Garciano</h1>
+      <p class="role">Aspiring Web Developer</p>
+
+      <div class="socials">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+
+      <!-- ABOUT -->
+      <div class="section">
+        <h2 class="section-title">ABOUT</h2>
+        <div class="info">
+          <p>
+            I'm Jerald Garciano, an aspiring web developer focused on building clean, modern, and user-friendly websites.
+          </p>
+          <p>
+            I’m currently strengthening my skills in HTML and CSS, learning how structure and design work together to create smooth digital experiences.
+          </p>
+          <p>
+            I enjoy improving details — from layout spacing to visual balance — because I believe small refinements create big impact.
+          </p>
+          <p>
+            My goal is to grow into a developer who not only writes functional code, but also creates interfaces that feel polished and professional.
+          </p>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="section">
+        <h2 class="section-title">CONTACT</h2>
+
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>0989899032</span>
+        </div>
+
+        <div class="contact-item">
+          <i class="fab fa-facebook"></i>
+          <span>Jerald Roman</span>
+        </div>
+
+        <div class="contact-item">
+          <i class="fab fa-instagram"></i>
+          <span>@jrld.grcn</span>
+        </div>
+
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>samakaguya452@gmail.com</span>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="section">
+        <h2 class="section-title">SKILLS</h2>
+
+        <div class="skill">
+          <p class="skill-name">HTML</p>
+          <div class="bar"><div class="progress" style="width: 85%;"></div></div>
+        </div>
+
+        <div class="skill">
+          <p class="skill-name">CSS</p>
+          <div class="bar"><div class="progress" style="width: 80%;"></div></div>
+        </div>
+
+        <div class="skill">
+          <p class="skill-name">Basic Python</p>
+          <div class="bar"><div class="progress" style="width: 60%;"></div></div>
+        </div>
+
       </div>
 
     </div>
-  </header>
+  </div>
+</div>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>01 — About</h2>
-    <p>
-      I am a student developing my foundation in web technologies, focusing on HTML, CSS, and Python.
-      I aim to create structured, elegant, and functional interfaces with attention to detail and design clarity.
-    </p>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>02 — Skills</h2>
-
-    <div class="card">
-      <h3>Frontend Composition</h3>
-      <p>HTML5, CSS3 (Layout Design, Visual Structure)</p>
-    </div>
-
-    <div class="card">
-      <h3>Programming Logic</h3>
-      <p>Python (Basic Algorithms, Input Handling, Conditions)</p>
-    </div>
-
-    <div class="card">
-      <h3>Version Control</h3>
-      <p>Git, GitHub</p>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>03 — Works</h2>
-
-    <div class="card">
-      <h3>Portfolio Composition</h3>
-      <p>A structured personal website presenting my development journey.</p>
-    </div>
-
-    <div class="card">
-      <h3>Web Exercises</h3>
-      <p>HTML and CSS practice layouts focused on visual discipline.</p>
-    </div>
-
-    <div class="card">
-      <h3>Python Studies</h3>
-      <p>Small logic-based programs for foundational programming skill.</p>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>04 — Contact</h2>
-
-    <div class="contact-box">
-      <p>Email: <a href="mailto:romanjerald702@gmail.com">romanjerald702@gmail.com</a></p>
-      <p>Phone: <a href="tel:+639289899032">+63 928 989 9032</a></p>
-      <p>GitHub: <a href="#">samakaguya452-debug</a></p>
-    </div>
-  </section>
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 Jerald Garciano • Built with passion and consistency</p>
+</footer>
 
 </body>
 </html>
