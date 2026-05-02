@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jerald Garciano | Portfolio</title>
+<meta charset="UTF-8">
+<title>Jerald Garciano | Portfolio</title>
 
-  <!-- FONTS -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-
-  <!-- ICONS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header class="header">
   <div class="header-inner">
     <div class="logo">JG</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Projects</a>
+
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="practice.html" target="_blank">Practice</a>
+      <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
-<div class="container fade-in">
+<!-- MAIN -->
+<div class="container">
+
   <div class="profile-card">
 
     <!-- LEFT -->
@@ -38,35 +39,28 @@
       <p class="role">Aspiring Web Developer</p>
 
       <!-- CONTACTS -->
-      <div class="left-contact">
+      <div class="left-contact" id="contact">
 
         <a href="https://www.facebook.com/" target="_blank" class="contact-row">
-          <i class="fab fa-facebook"></i>
-          <span>Jerald Roman</span>
+          <i class="fab fa-facebook"></i> Jerald Roman
         </a>
 
         <a href="https://www.instagram.com/jrld.grcn" target="_blank" class="contact-row">
-          <i class="fab fa-instagram"></i>
-          <span>jrld.grcn</span>
+          <i class="fab fa-instagram"></i> jrld.grcn
         </a>
 
         <a href="mailto:samakaguya452@gmail.com" class="contact-row">
-          <i class="fas fa-envelope"></i>
-          <span>samakaguya452@gmail.com</span>
+          <i class="fas fa-envelope"></i> samakaguya452@gmail.com
         </a>
 
         <a href="tel:09289899032" class="contact-row">
-          <i class="fas fa-phone"></i>
-          <span>0928 989 9032</span>
+          <i class="fas fa-phone"></i> 0928 989 9032
         </a>
 
-      </div>
-
-      <!-- GITHUB -->
-      <div class="socials">
-        <a href="https://github.com/samakaguya452-debug" target="_blank">
-          <i class="fab fa-github"></i>
+        <a href="https://github.com/samakaguya452-debug" target="_blank" class="contact-row">
+          <i class="fab fa-github"></i> samakaguya452-debug
         </a>
+
       </div>
 
     </div>
@@ -75,64 +69,48 @@
     <div class="right">
 
       <!-- ABOUT -->
-      <div class="section">
+      <section id="about" class="section">
         <h2 class="section-title">ABOUT</h2>
-        <p class="desc">
-          I'm an aspiring web developer focused on building clean, modern, and user-friendly websites.
-          I’m currently improving my HTML, CSS, and Python skills while learning better UI design.
-        </p>
-      </div>
+        <div class="about-box">
+          Aspiring web developer focused on clean UI, structured layouts, and improving frontend development skills.
+        </div>
+      </section>
 
       <!-- SKILLS -->
-      <div class="section">
+      <section id="skills" class="section">
         <h2 class="section-title">SKILLS</h2>
 
         <div class="skill">
-          <p>HTML</p>
-          <div class="bar"><div class="progress" style="width:85%"></div></div>
+          <div class="skill-header"><i class="fab fa-html5"></i> HTML</div>
+          <div class="bar"><div class="progress html"></div></div>
         </div>
 
         <div class="skill">
-          <p>CSS</p>
-          <div class="bar"><div class="progress" style="width:80%"></div></div>
+          <div class="skill-header"><i class="fab fa-css3-alt"></i> CSS</div>
+          <div class="bar"><div class="progress css"></div></div>
         </div>
 
         <div class="skill">
-          <p>Python</p>
-          <div class="bar"><div class="progress" style="width:60%"></div></div>
+          <div class="skill-header"><i class="fab fa-python"></i> Python</div>
+          <div class="bar"><div class="progress py"></div></div>
         </div>
-      </div>
 
-      <!-- PROJECTS -->
-      <div class="section">
-        <h2 class="section-title">PROJECTS</h2>
+      </section>
 
-        <div class="projects">
-          <a href="#" class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>My personal portfolio design.</p>
-          </a>
-
-          <a href="practice.html" class="project-card">
-            <h3>Practice Project</h3>
-            <p>Creative experiments and themed layouts.</p>
-          </a>
-
-          <a href="https://github.com/samakaguya452-debug" target="_blank" class="project-card">
-            <h3>GitHub</h3>
-            <p>My repositories and progress.</p>
-          </a>
-        </div>
-      </div>
+      <!-- PROJECT BUTTON -->
+      <a href="practice.html" target="_blank" class="project-main-box">
+        OPEN PRACTICE PROJECT →
+      </a>
 
     </div>
+
   </div>
+
 </div>
 
+<!-- FOOTER -->
 <footer class="footer">
-  <div class="footer-inner">
-    <p>© 2026 Jerald Garciano • Built with consistency</p>
-  </div>
+  <p>© 2026 Jerald Garciano</p>
 </footer>
 
 </body>

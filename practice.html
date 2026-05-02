@@ -1,36 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Practice Project</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Practice Projects</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* PAGE WRAPPER */
+.practice-wrapper {
+  max-width: 1000px;
+  margin: auto;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+/* TITLE */
+.practice-title {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #7c5cff;
+  margin-bottom: 8px;
+}
+
+.subtext {
+  color: #9aa4b2;
+  font-size: 13px;
+  margin-bottom: 35px;
+}
+
+/* GRID */
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+/* === BASE CARD (RE-ESTABLISHED HERO TAB FEEL) === */
+.project-card {
+  width: 250px;
+  padding: 26px;
+
+  text-decoration: none;
+  color: #e6e6e6;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(30,34,42,0.95),
+    rgba(18,20,26,0.95)
+  );
+
+  border: 1px solid rgba(124,92,255,0.25);
+
+  box-shadow:
+    0 0 12px rgba(124,92,255,0.15),
+    inset 0 0 20px rgba(255,255,255,0.02);
+
+  transition: 0.3s ease;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* HOVER LIFT + GLOW */
+.project-card:hover {
+  transform: translateY(-12px) scale(1.05);
+}
+
+/* TITLE */
+.project-card h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  margin: 0;
+}
+
+/* DESCRIPTION */
+.project-card p {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #9aa4b2;
+}
+
+/* === INDIVIDUAL CHARACTER IDENTITY RESTORED === */
+
+/* JHIN (ARTISTIC PURPLE) */
+.jhin {
+  border-color: rgba(124,92,255,0.5);
+}
+
+.jhin h2 {
+  color: #b58cff;
+}
+
+.jhin:hover {
+  box-shadow:
+    0 0 25px rgba(124,92,255,0.6),
+    0 0 60px rgba(124,92,255,0.2);
+  background: radial-gradient(circle at top, rgba(124,92,255,0.22), transparent 70%);
+}
+
+/* DRAVEN (BLOOD RED ENERGY) */
+.draven {
+  border-color: rgba(255,60,60,0.4);
+}
+
+.draven h2 {
+  color: #ff5c5c;
+}
+
+.draven:hover {
+  box-shadow:
+    0 0 25px rgba(255,60,60,0.5),
+    0 0 60px rgba(255,60,60,0.15);
+  background: radial-gradient(circle at top, rgba(255,60,60,0.18), transparent 70%);
+}
+
+/* LUCIAN (BLUE LIGHT ENERGY) */
+.lucian {
+  border-color: rgba(0,212,255,0.4);
+}
+
+.lucian h2 {
+  color: #00d4ff;
+}
+
+.lucian:hover {
+  box-shadow:
+    0 0 25px rgba(0,212,255,0.45),
+    0 0 60px rgba(0,212,255,0.15);
+  background: radial-gradient(circle at top, rgba(0,212,255,0.18), transparent 70%);
+}
+
+/* TAB HEADER */
+.tab-header {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 20px;
+
+  border: 1px solid rgba(124,92,255,0.35);
+  color: #cfd6e1;
+
+  background: rgba(255,255,255,0.02);
+  margin-bottom: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<div class="container fade-in">
-  <div class="profile-card center-card">
+<div class="practice-wrapper fade-page">
 
-    <h1 class="name">Practice Project</h1>
-    <p class="role">Creative Exploration</p>
+  <div class="tab-header">Practice Project Hub</div>
 
-    <p class="desc">
-      This space is for experimental designs and themed UI concepts.
-    </p>
+  <div class="practice-title">Choose Your Character</div>
+  <div class="subtext">Each selection represents a distinct identity system</div>
 
-    <div class="projects">
+  <div class="projects">
 
-      <a href="jhin.html" target="_blank" class="project-card jhin-card">
-        <div class="jhin-overlay">Enter Performance</div>
-        <h3>Jhin: The Virtuoso</h3>
-        <p>A theatrical dark-themed concept.</p>
-      </a>
+    <a href="jhin.html" target="_blank" class="project-card jhin">
+      <h2>Jhin</h2>
+      <p>The Virtuoso</p>
+    </a>
 
-    </div>
+    <a href="draven.html" target="_blank" class="project-card draven">
+      <h2>Draven</h2>
+      <p>The Executioner</p>
+    </a>
 
-    <a href="index.html" class="btn">Back</a>
+    <a href="lucian.html" target="_blank" class="project-card lucian">
+      <h2>Lucian</h2>
+      <p>The Purifier</p>
+    </a>
 
   </div>
+
 </div>
 
 </body>
