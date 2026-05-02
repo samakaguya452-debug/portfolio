@@ -16,31 +16,59 @@
 
 <body>
 
-<!-- HEADER -->
 <header class="header">
-  <div class="logo">JG</div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
+  <div class="header-inner">
+    <div class="logo">JG</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+    </nav>
+  </div>
 </header>
 
-<!-- MAIN -->
-<div class="container">
+<div class="container fade-in">
   <div class="profile-card">
 
     <!-- LEFT -->
     <div class="left">
+
       <img src="profile.jpg" class="profile-pic">
 
       <h1 class="name">Jerald Garciano</h1>
       <p class="role">Aspiring Web Developer</p>
 
-      <div class="socials">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
+      <!-- CONTACTS -->
+      <div class="left-contact">
+
+        <a href="https://www.facebook.com/" target="_blank" class="contact-row">
+          <i class="fab fa-facebook"></i>
+          <span>Jerald Roman</span>
+        </a>
+
+        <a href="https://www.instagram.com/jrld.grcn" target="_blank" class="contact-row">
+          <i class="fab fa-instagram"></i>
+          <span>jrld.grcn</span>
+        </a>
+
+        <a href="mailto:samakaguya452@gmail.com" class="contact-row">
+          <i class="fas fa-envelope"></i>
+          <span>samakaguya452@gmail.com</span>
+        </a>
+
+        <a href="tel:09289899032" class="contact-row">
+          <i class="fas fa-phone"></i>
+          <span>0928 989 9032</span>
+        </a>
+
       </div>
+
+      <!-- GITHUB -->
+      <div class="socials">
+        <a href="https://github.com/samakaguya452-debug" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
     </div>
 
     <!-- RIGHT -->
@@ -49,45 +77,10 @@
       <!-- ABOUT -->
       <div class="section">
         <h2 class="section-title">ABOUT</h2>
-        <div class="info">
-          <p>
-            I'm Jerald Garciano, an aspiring web developer focused on building clean, modern, and user-friendly websites.
-          </p>
-          <p>
-            I’m currently strengthening my skills in HTML and CSS, learning how structure and design work together to create smooth digital experiences.
-          </p>
-          <p>
-            I enjoy improving details — from layout spacing to visual balance — because I believe small refinements create big impact.
-          </p>
-          <p>
-            My goal is to grow into a developer who not only writes functional code, but also creates interfaces that feel polished and professional.
-          </p>
-        </div>
-      </div>
-
-      <!-- CONTACT -->
-      <div class="section">
-        <h2 class="section-title">CONTACT</h2>
-
-        <div class="contact-item">
-          <i class="fas fa-phone"></i>
-          <span>0989899032</span>
-        </div>
-
-        <div class="contact-item">
-          <i class="fab fa-facebook"></i>
-          <span>Jerald Roman</span>
-        </div>
-
-        <div class="contact-item">
-          <i class="fab fa-instagram"></i>
-          <span>@jrld.grcn</span>
-        </div>
-
-        <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <span>samakaguya452@gmail.com</span>
-        </div>
+        <p class="desc">
+          I'm an aspiring web developer focused on building clean, modern, and user-friendly websites.
+          I’m currently improving my HTML, CSS, and Python skills while learning better UI design.
+        </p>
       </div>
 
       <!-- SKILLS -->
@@ -95,29 +88,51 @@
         <h2 class="section-title">SKILLS</h2>
 
         <div class="skill">
-          <p class="skill-name">HTML</p>
-          <div class="bar"><div class="progress" style="width: 85%;"></div></div>
+          <p>HTML</p>
+          <div class="bar"><div class="progress" style="width:85%"></div></div>
         </div>
 
         <div class="skill">
-          <p class="skill-name">CSS</p>
-          <div class="bar"><div class="progress" style="width: 80%;"></div></div>
+          <p>CSS</p>
+          <div class="bar"><div class="progress" style="width:80%"></div></div>
         </div>
 
         <div class="skill">
-          <p class="skill-name">Basic Python</p>
-          <div class="bar"><div class="progress" style="width: 60%;"></div></div>
+          <p>Python</p>
+          <div class="bar"><div class="progress" style="width:60%"></div></div>
         </div>
+      </div>
 
+      <!-- PROJECTS -->
+      <div class="section">
+        <h2 class="section-title">PROJECTS</h2>
+
+        <div class="projects">
+          <a href="#" class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>My personal portfolio design.</p>
+          </a>
+
+          <a href="practice.html" class="project-card">
+            <h3>Practice Project</h3>
+            <p>Creative experiments and themed layouts.</p>
+          </a>
+
+          <a href="https://github.com/samakaguya452-debug" target="_blank" class="project-card">
+            <h3>GitHub</h3>
+            <p>My repositories and progress.</p>
+          </a>
+        </div>
       </div>
 
     </div>
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer class="footer">
-  <p>© 2026 Jerald Garciano • Built with passion and consistency</p>
+  <div class="footer-inner">
+    <p>© 2026 Jerald Garciano • Built with consistency</p>
+  </div>
 </footer>
 
 </body>
