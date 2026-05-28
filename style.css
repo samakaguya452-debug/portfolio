@@ -1,4 +1,6 @@
-/* BASE */
+/* =========================
+   BASE
+========================= */
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -6,7 +8,15 @@ body {
   color: #e6e6e6;
 }
 
-/* HEADER */
+/* Smooth images globally */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================
+   HEADER
+========================= */
 .header {
   position: fixed;
   top: 0;
@@ -23,18 +33,23 @@ body {
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   color: #7c5cff;
   font-weight: 600;
+  letter-spacing: 1px;
 }
 
-/* NAV */
+/* =========================
+   NAV
+========================= */
 .nav a {
   margin-left: 15px;
   text-decoration: none;
   color: #cfd6e1;
+  transition: 0.2s;
 }
 
 .nav a:hover {
@@ -42,28 +57,29 @@ body {
   text-shadow: 0 0 10px #7c5cff;
 }
 
-/* LAYOUT */
+/* =========================
+   LAYOUT (INDEX)
+========================= */
 .container {
   display: flex;
   justify-content: center;
-  padding: 110px 20px 40px;
+  padding: 90px 20px 40px;
 }
 
-/* CARD */
 .profile-card {
   width: 1100px;
   display: flex;
   gap: 30px;
   padding: 35px;
-
   background: rgba(30,34,42,0.92);
   border: 1px solid rgba(124,92,255,0.25);
   border-radius: 15px;
-
   box-shadow: 0 0 20px rgba(124,92,255,0.15);
 }
 
-/* LEFT */
+/* =========================
+   LEFT SIDE
+========================= */
 .left {
   width: 35%;
   text-align: center;
@@ -84,7 +100,7 @@ body {
   color: #9aa4b2;
 }
 
-/* CONTACT FIX */
+/* CONTACTS */
 .left-contact {
   margin-top: 15px;
   text-align: left;
@@ -94,17 +110,13 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
-
   padding: 10px;
   margin: 6px 0;
-
   text-decoration: none;
   color: #cfd6e1;
-
   background: rgba(255,255,255,0.02);
   border: 1px solid rgba(124,92,255,0.2);
   border-radius: 8px;
-
   transition: 0.25s;
 }
 
@@ -114,7 +126,9 @@ body {
   transform: translateX(4px);
 }
 
-/* RIGHT */
+/* =========================
+   RIGHT SIDE
+========================= */
 .right {
   flex: 1;
 }
@@ -129,7 +143,7 @@ body {
   font-size: 13px;
 }
 
-/* ABOUT */
+/* ABOUT BOX */
 .about-box {
   padding: 15px;
   line-height: 1.6;
@@ -143,16 +157,11 @@ body {
   margin-bottom: 12px;
 }
 
-.skill-header {
-  margin-bottom: 6px;
-}
-
 .bar {
   height: 8px;
   background: #2a2f38;
   border-radius: 8px;
   overflow: hidden;
-  border: 1px solid rgba(124,92,255,0.2);
 }
 
 .progress {
@@ -180,11 +189,9 @@ body {
   padding: 12px 14px;
   text-decoration: none;
   color: white;
-
   background: rgba(124,92,255,0.12);
   border: 1px solid rgba(124,92,255,0.25);
   border-radius: 10px;
-
   transition: 0.25s;
 }
 
@@ -202,3 +209,214 @@ body {
   border-top: 1px solid rgba(124,92,255,0.2);
 }
 
+/* =========================
+   PRACTICE PAGE
+========================= */
+.practice-wrapper {
+  max-width: 1000px;
+  margin: auto;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.practice-title {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #7c5cff;
+  margin-bottom: 8px;
+}
+
+.subtext {
+  color: #9aa4b2;
+  font-size: 13px;
+  margin-bottom: 35px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+/* PROJECT CARD */
+.project-card {
+  width: 250px;
+  padding: 26px;
+  text-decoration: none;
+  color: #e6e6e6;
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgba(30,34,42,0.95), rgba(18,20,26,0.95));
+  border: 1px solid rgba(124,92,255,0.25);
+  box-shadow: 0 0 12px rgba(124,92,255,0.15);
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-12px) scale(1.05);
+}
+
+/* CARD TEXT */
+.project-card h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  margin: 0;
+}
+
+.project-card p {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #9aa4b2;
+}
+
+/* JHIN */
+.jhin {
+  border-color: rgba(124,92,255,0.5);
+}
+
+.jhin h2 {
+  color: #b58cff;
+}
+
+.jhin:hover {
+  box-shadow: 0 0 25px rgba(124,92,255,0.6);
+}
+
+/* DRAVEN */
+.draven {
+  border-color: rgba(255,60,60,0.4);
+}
+
+.draven h2 {
+  color: #ff5c5c;
+}
+
+.draven:hover {
+  box-shadow: 0 0 25px rgba(255,60,60,0.5);
+}
+
+/* LUCIAN */
+.lucian {
+  border-color: rgba(0,212,255,0.4);
+}
+
+.lucian h2 {
+  color: #00d4ff;
+}
+
+.lucian:hover {
+  box-shadow: 0 0 25px rgba(0,212,255,0.45);
+}
+
+/* =========================
+   CHAMPION PAGES
+========================= */
+.champ-hero {
+  position: relative;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+  overflow: hidden;
+}
+
+.champ-hero h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.tagline {
+  color: #aaa;
+}
+
+.bg-text {
+  position: absolute;
+  font-size: 120px;
+  opacity: 0.05;
+  top: 20px;
+  left: 40px;
+}
+
+/* BACKGROUNDS */
+.jhin-bg { background: linear-gradient(to right, #111, #2a1a00); }
+.draven-bg { background: linear-gradient(to right, #111, #2a0000); }
+.lucian-bg { background: linear-gradient(to right, #111, #001a2a); }
+
+/* CONTENT */
+.champ-content {
+  padding: 30px;
+}
+
+.champ-box {
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(124,92,255,0.2);
+  margin-bottom: 20px;
+}
+
+.champ-image {
+  width: 100%;
+  border-radius: 12px;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+
+.champ-image:hover {
+  transform: scale(1.02);
+}
+
+/* ABILITIES */
+.abilities {
+  display: flex;
+  gap: 10px;
+}
+
+.ability {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  background: rgba(255,255,255,0.03);
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* TOOLTIP */
+.ability::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  opacity: 0;
+  white-space: nowrap;
+  transition: 0.2s;
+}
+
+.ability:hover::after {
+  opacity: 1;
+}
+
+/* GLOW */
+.jhin .ability:hover { box-shadow: 0 0 10px gold; }
+.draven .ability:hover { box-shadow: 0 0 10px crimson; }
+.lucian .ability:hover { box-shadow: 0 0 10px #00bfff; }
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
